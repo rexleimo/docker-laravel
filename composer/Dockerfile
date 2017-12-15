@@ -1,4 +1,4 @@
-FROM php-cli:v1
+FROM rainbowmorel/php-cli
 
 MAINTAINER "傻梦兽" <rainbowmorel@163.com>
 
