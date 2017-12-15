@@ -4,7 +4,7 @@ MAINTAINER "傻梦兽" <rainbowmorel@163.com>
 
 RUN apt-get clean && apt-get -y update && apt-get install -y locales curl software-properties-common git \
   && locale-gen en_US.UTF-8 
-
+RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt-get update
 RUN apt-get install -y --force-yes php7.1-bcmath php7.1-bz2 php7.1-cli php7.1-common php7.1-curl \
                 php7.1-cgi php7.1-dev php7.1-fpm php7.1-gd php7.1-gmp php7.1-imap php7.1-intl \
